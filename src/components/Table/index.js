@@ -48,7 +48,7 @@ class Table extends Component {
               onSort={this.onSort}
               activeSortKey={sortKey}
             >
-              Title
+              Article Title
             </Sort>
           </span>
           <span style={{ width: '15%' }}>

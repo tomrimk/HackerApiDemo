@@ -131,9 +131,10 @@ class App extends Component {
             onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}
           >
             {' '}
-            More{' '}
+            Load more{' '}
           </ButtonWithLoading>
         </div>
+        <Footer />
       </div>
     );
   }
@@ -145,5 +146,22 @@ const withLoading = Component => ({ isLoading, ...rest }) =>
   isLoading ? <Loading /> : <Component {...rest} />;
 
 const ButtonWithLoading = withLoading(Button);
+
+const Footer = () => {
+  return (
+    <div className="footer">
+      <p>
+        You can check the code here:{' '}
+        <a
+          href="https://github.com/tomrimk/HackerApiDemo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/tomrimk/HackerApiDemo
+        </a>
+      </p>
+    </div>
+  );
+};
 
 export default App;

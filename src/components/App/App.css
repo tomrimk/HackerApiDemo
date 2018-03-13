@@ -6,6 +6,7 @@
   width: 150px;
   background: rgb(4, 111, 182);
   color: white;
+  border-radius: 0;
 }
 
 .interactions button:hover {
@@ -20,4 +21,22 @@ h2 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 45px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  background: rgb(4, 111, 182);
+  height: 75px;
+  margin-top: 50px;
+  filter: drop-shadow(0 1px 3px rgb(43, 42, 42));
+}
+
+.footer p {
+  margin: 0;
+  padding-top: 35px;
+}
+
+.footer > p > a {
+  color: white;
 }
