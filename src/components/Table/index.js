@@ -4,6 +4,7 @@ import { sortBy } from 'lodash';
 
 import Sort from '../Sort';
 import Button from '../Button';
+import './Table.css';
 
 const SORTS = {
   NONE: list => list,
