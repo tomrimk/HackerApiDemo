@@ -1,34 +1,66 @@
 .table {
   margin: 20px 0;
+  padding: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
 .table-header {
   display: flex;
   line-height: 24px;
   font-size: 16px;
-  padding: 0 10px;
+  padding: 10px;
   justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
 }
+
 .table-empty {
   margin: 200px;
   text-align: center;
   font-size: 16px;
 }
+
 .table-row {
   display: flex;
+  align-content: center;
   line-height: 24px;
+  height: 75px;
   white-space: nowrap;
   margin: 10px 0;
-  padding: 10px;
+  padding: 0;
   background: #ffffff;
   border: 1px solid #e3e3e3;
 }
+
+.table-row > span:nth-last-child(1) {
+  background: rgb(240, 55, 55);
+  color: white;
+}
+
+.table-row > span:nth-last-child(1):hover {
+  background: rgb(243, 71, 71);
+  color: white !important;
+}
+
 .table-header > span {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 5px;
 }
+
 .table-row > span {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 5px;
+  padding: 25px 5px;
+}
+
+.dismiss {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dismiss:hover {
+  color: white;
 }

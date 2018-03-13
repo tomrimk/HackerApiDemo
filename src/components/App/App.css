@@ -1,6 +1,23 @@
-.page {
-  margin: 20px;
-}
 .interactions {
   text-align: center;
+}
+
+.interactions button {
+  width: 150px;
+  background: rgb(4, 111, 182);
+  color: white;
+}
+
+.interactions button:hover {
+  background: rgb(12, 134, 216);
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }

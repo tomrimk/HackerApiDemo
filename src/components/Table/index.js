@@ -51,7 +51,7 @@ class Table extends Component {
               Title
             </Sort>
           </span>
-          <span style={{ width: '30%' }}>
+          <span style={{ width: '15%' }}>
             <Sort
               sortKey={'AUTHOR'}
               onSort={this.onSort}
@@ -60,7 +60,7 @@ class Table extends Component {
               Author
             </Sort>
           </span>
-          <span style={{ width: '10%' }}>
+          <span style={{ width: '15%' }}>
             <Sort
               sortKey={'COMMENTS'}
               onSort={this.onSort}
@@ -69,7 +69,7 @@ class Table extends Component {
               Comments
             </Sort>
           </span>
-          <span style={{ width: '10%' }}>
+          <span style={{ width: '15%' }}>
             <Sort
               sortKey={'POINTS'}
               onSort={this.onSort}
@@ -78,19 +78,21 @@ class Table extends Component {
               Points
             </Sort>
           </span>
-          <span style={{ width: '10%' }}> Archive </span>
+          <span style={{ width: '15%' }}> Archive </span>
         </div>
         {reverseSortedList.map(item => (
           <div key={item.objectID} className="table-row">
             <span style={{ width: '40%' }}>
-              <a href={item.url}>{item.title}</a>
+              <a target="_blank" href={item.url}>
+                {item.title}
+              </a>
             </span>
-            <span style={{ width: '30%' }}>{item.author}</span>
-            <span style={{ width: '10%' }}>{item.num_comments}</span>
-            <span style={{ width: '10%' }}>{item.points}</span>
-            <span>
+            <span style={{ width: '15%' }}>{item.author}</span>
+            <span style={{ width: '15%' }}>{item.num_comments}</span>
+            <span style={{ width: '15%' }}>{item.points}</span>
+            <span style={{ width: '15%' }}>
               <Button
-                className="button-inline"
+                className="button-inline dismiss"
                 onClick={() => onDismiss(item.objectID)}
               >
                 Dismiss

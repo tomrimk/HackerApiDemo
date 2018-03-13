@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 45px;
+}
+
+.header {
+  background: rgb(4, 111, 182);
+  height: 150px;
+  width: 100%;
+  margin-bottom: 50px;
+  filter: drop-shadow(0 1px 3px rgb(43, 42, 42));
+}

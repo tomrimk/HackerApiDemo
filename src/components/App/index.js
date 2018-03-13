@@ -4,6 +4,7 @@ import fetch from 'isomorphic-fetch';
 import Table from '../Table';
 import Search from '../Search';
 import Button from '../Button';
+import Header from '../Header';
 import './App.css';
 
 const DEFAULT_QUERY = 'redux';
@@ -105,6 +106,8 @@ class App extends Component {
       (results && results[searchKey] && results[searchKey].hits) || [];
     return (
       <div className="page">
+        <Header />
+        <h2>Enter the keyword</h2>
         <div className="interactions">
           <Search
             value={searchTerm}
@@ -114,6 +117,7 @@ class App extends Component {
             Search
           </Search>
         </div>
+        <h2>Search results</h2>
         {error ? (
           <div className="interactions">
             <p>Something went wrong.</p>

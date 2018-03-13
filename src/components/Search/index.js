@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Search.css';
+
 const Search = ({ value, onChange, children, onSubmit }) => (
   <form onSubmit={onSubmit}>
     <input

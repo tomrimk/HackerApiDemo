@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import Button from '../Button';
+import './Sort.css';
 
 const Sort = ({ sortKey, activeSortKey, onSort, children }) => {
   const sortClass = classNames('button-inline', {
